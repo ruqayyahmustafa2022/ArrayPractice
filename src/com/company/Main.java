@@ -9,6 +9,7 @@ public class Main {
 	(b) input temperatures for 7 days (degree F)
 	(c) add it to dailyAverageTemp
 	(d) print out each daily avg temperature
+	(e) print out the weekly average temperature
 	 */
      Scanner userInput = new Scanner(System.in);
      double[] dailyAverageTemp = new double[7];
@@ -24,11 +25,18 @@ public class Main {
 
      }
 
+
      for(int i = 0; i < dailyAverageTemp.length; i++)
      {
          System.out.println("The temperature for each day: " + dailyAverageTemp[i]);
 
      }
+
+     //part e: calculate the weekly average temperature
+     double weeklyAvTemp = (dailyAverageTemp[0] + dailyAverageTemp[1] + dailyAverageTemp[2] +dailyAverageTemp[3]
+                +dailyAverageTemp[4] +dailyAverageTemp[5] +dailyAverageTemp[6]) / dailyAverageTemp.length;
+
+     System.out.println("Weekly Average Temperature: " + weeklyAvTemp);
 
 
 
