@@ -15,12 +15,18 @@ public class Main {
 
 
 
-
+    //part a,b,c,d
      for(int i = 0; i < dailyAverageTemp.length; i++)
      {
          double totalTemp;
          System.out.println("Enter the daily avg temp for Day " + (i+1) + ": ");
          dailyAverageTemp[i] = userInput.nextDouble();
+
+     }
+
+     for(int i = 0; i < dailyAverageTemp.length; i++)
+     {
+         System.out.println("The temperature for each day: " + dailyAverageTemp[i]);
 
      }
 
